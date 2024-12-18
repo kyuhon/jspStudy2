@@ -1,0 +1,14 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MVC 회원가입</title>
+</head>
+<body>
+	 <h3 align="center">index page 입니다.</h3>
+	 <a href="Login.do">로그인</a>
+	 <br />
+	 <a href="regForm.do">회원가입</a>
+	 <br />
+</body>
+</html>
