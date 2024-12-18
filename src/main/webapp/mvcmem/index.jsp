@@ -6,7 +6,7 @@
 </head>
 <body>
 	 <h3 align="center">index page 입니다.</h3>
-	 <a href="Login.do">로그인</a>
+	 <a href="login.do">로그인</a>
 	 <br />
 	 <a href="regForm.do">회원가입</a>
 	 <br />

@@ -30,8 +30,8 @@ public class ActionFactory {
 		Action action = null;
 		 switch (cmd) {
 		 case "/index.do":
-		 		action = new IndexAction();
-		 		break;
+		 	 action = new IndexAction();
+		 	 break;
 		 case "/regForm.do":
 			 action = new RegFormAction();
 			 break;
@@ -57,7 +57,7 @@ public class ActionFactory {
 			 action = new ModifyFormAction();
 			 break;
 		 case "/modifyProc.do":
-			 action = new ModifyProcAction();
+			 action = new ModifyFormAction();
 			 break;
 		 default:
 		 action = new IndexAction();
