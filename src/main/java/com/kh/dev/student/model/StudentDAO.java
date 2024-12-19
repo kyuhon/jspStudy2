@@ -31,7 +31,7 @@ public class StudentDAO {
 	private final String SELECT_LOGIN_SQL = "SELECT PASS FROM STUDENT WHERE ID = ?";
 	private final String SELECT_LOGIN_CHECK_SQL = "SELECT * FROM STUDENT WHERE ID = ? AND PWD = ?";
 	private final String INSERT_SQL = "insert into student values(?,?,?,?,?,?,?,?,?,?)";
-	private final String DELETE_SQL = "DELETE FROM STUDENT WHERE ID = ?";
+	private final String DELETE_SQL = "DELETE FROM STUDENT WHERE ID = ? and PASS = ?";
 	private final String UPDATE_SQL = "update student set pass=?, phone1=?, phone2=?, phone3=?, "
 			+ "email=?, zipcode=?, address1=?, address2=? where id=?";
 	private final String SELECT_ZIP_SQL = "select * from zipcode where dong like ?";
@@ -213,6 +213,7 @@ public class StudentDAO {
 		try {
 			pstmt = con.prepareStatement(DELETE_SQL);
 			pstmt.setString(1, svo.getId());
+			pstmt.setString(2, svo.getPass());
 			count = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

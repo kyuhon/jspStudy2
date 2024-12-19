@@ -19,7 +19,7 @@
 </head>
 <body onload="begin()">
 	<main>
-		<form name="myForm" method="post" action="deleteProc.jsp"
+		<form name="myForm" method="post" action="deleteProc.do"
 			onsubmit="return checkPass()">
 			<table width="260" border="1" align="center">
 				<tr>
@@ -30,9 +30,10 @@
 					<td width="110"><input type="password" name="pass" size="15"></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><input type="submit"
-						value="회원탈퇴"> <input type="button" value="취  소"
-						onclick="javascript:window.location='login.jsp'"></td>
+					<td colspan="2" align="center">
+					<input type="submit" value="회원탈퇴"> 
+						<input type="button" value="취  소"
+						onclick="javascript:window.location='login.do'"></td>
 				</tr>
 			</table>
 		</form>
